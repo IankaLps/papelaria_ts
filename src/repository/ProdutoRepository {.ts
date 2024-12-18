@@ -1,6 +1,7 @@
 import { Produto } from "../model/Produto";
 
 export interface ProdutoRepository {
+    // CRUD do Produto
     listarTodas(): void;
     procurarPorId(id: number): void;
     cadastrar(produto: Produto): void;

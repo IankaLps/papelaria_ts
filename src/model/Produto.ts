@@ -1,10 +1,11 @@
 export abstract class Produto {
-
+    // Atributos
     private _id: number;
     private _nome: string;
     private _tipo: number;
     private _preco: number;
 
+    // Método Construtor
     constructor(id: number, nome: string, tipo: number, preco: number) {
         this._id = id;
         this._nome = nome;
@@ -50,18 +51,15 @@ export abstract class Produto {
 
         switch (this._tipo) {
             case 1:
-                tipo = "Materiais de Escritório";
-                break;
-            case 2:
                 tipo = "Material para Organização";
                 break;
-            case 3:
+            case 2:
                 tipo = "Material Escolar";
                 break;
-            case 4:
+            case 3:
                 tipo = "Material de Impressão";
                 break;
-            case 5:
+            case 4:
                 tipo = "Material para Presentes e Decoração";
                 break;
         }

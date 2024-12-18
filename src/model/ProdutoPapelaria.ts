@@ -5,14 +5,7 @@ export class ProdutoPapelaria extends Produto {
     private _marca: string;
     private _quantidade: number;
 
-    constructor(
-        id: number, 
-        nome: string, 
-        tipo: number, 
-        preco: number, 
-        marca: string,
-        quantidade: number
-    ) {
+    constructor(id: number, nome: string, tipo: number, preco: number, marca: string, quantidade: number) {
         super(id, nome, tipo, preco);
         this._marca = marca;
         this._quantidade = quantidade;
@@ -38,6 +31,6 @@ export class ProdutoPapelaria extends Produto {
     public visualizar(): void {
         super.visualizar();
         console.log("Marca: " + this._marca);
-        console.log("Quantidade: " + this._quantidade);
+        console.log(`Quantidade: ` + this._quantidade);
     }
 }
